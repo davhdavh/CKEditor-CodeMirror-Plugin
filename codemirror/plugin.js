@@ -689,6 +689,11 @@
                     }
                 };
 
+                if (CodeMirror.commands.autocomplete)
+				{
+					extraKeys["Ctrl-Space"]  = "autocomplete";
+				}
+
                 addCKEditorKeystrokes(extraKeys);
 
                 window["codemirror_" + editor.id] = CodeMirror.fromTextArea(sourceAreaElement.$, {
