@@ -36,6 +36,7 @@
                     showSearchButton: true,
                     showTrailingSpace: true,
                     showUncommentButton: true,
+                    styleActiveLine: true,
                     theme: 'default',
                     useBeautify: false
                 };
@@ -707,6 +708,7 @@
                     theme: config.theme,
                     showTrailingSpace: config.showTrailingSpace,
                     showCursorWhenSelecting: true,
+                    styleActiveLine: config.styleActiveLine,
                     //extraKeys: {"Ctrl-Space": "autocomplete"},
                     extraKeys: extraKeys,
                     onKeyEvent: function (codeMirror_Editor, evt) {
